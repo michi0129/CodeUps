@@ -1,6 +1,10 @@
 @use "global" as *;
 
 .button {
+    position: relative;
+}
+
+.button__button {
     display: inline-block;
     position: relative;
     width: rem(202);
@@ -17,7 +21,7 @@
     z-index: 1;
 }
 
-.button::after {
+.button__button::after {
     background-color: $green;
     position: absolute;
     top: 0;
@@ -31,11 +35,11 @@
     z-index: -1;
 }
 
-.button:hover {
+.button__button:hover {
     color: $white;
 }
 
-.button:hover::after {
+.button__button:hover::after {
     transform: scale(1, 1);
 }
 

@@ -29,7 +29,80 @@
   <script defer src="./assets/js/script.js"></script>
 </head>
 <body>
+  <!-- ヘッダー -->
   <header>
+    <div class="header">
+      <div class="header__inner">
+        <h1 class="header__logo">
+          <a href="#"><img src="./assets/images/common/logo-white.svg" alt="CodeUpsのロゴ"></a>
+        </h1>
+        <div class="header__hamburger-button js-hamburger is-active">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- ナビゲーション -->
+        <nav class="header__sp-nav sp-nav is-active">
+          <ul class="sp-navi__left">
+            <li class="sp-navi__items">
+              <a href="" class="sp-navi__title"><span class="sp-nav__icon"></span>キャンペーン</a>
+              <ul class="sp-navi__item">
+                <li><a href="#">ライセンス取得</a></li>
+                <li><a href="#">貸切体験ダイビング</a></li>
+                <li><a href="#">ナイトダイビング</a></li>
+              </ul>
+            </li>
+            <li class="sp-navi__items">
+              <a href="" class="sp-navi__title"><span class="sp-nav__icon"></span>私たちについて</a>
+            </li>
+            <li class="sp-navi__items">
+              <a href="" class="sp-navi__title"><span class="sp-nav__icon"></span>ダイビング情報</a>
+              <ul class="sp-navi__item">
+                <li><a href="#">ライセンス講習</a></li>
+                <li><a href="#">体験ダイビング</a></li>
+                <li><a href="#">ファンダイビング</a></li>
+              </ul>
+            </li>
+            <li class="sp-navi__items">
+              <a href="" class="sp-navi__title"><span class="sp-nav__icon"></span>ブログ</a>
+            </li>
+            </ul>
+
+            <!-- SPナビ右側 -->
+            <ul class="sp-navi__right">            
+            <li class="sp-navi__items">
+              <a href="" class="sp-navi__title"><span class="sp-nav__icon"></span>お客様の声</a>
+            </li>
+            <li class="sp-navi__items">
+              <a href="" class="sp-navi__title"><span class="sp-nav__icon"></span>料金一覧</a>
+              <ul class="sp-navi__item">
+                <li><a href="#">ライセンス講習</a></li>
+                <li><a href="#">体験ダイビング</a></li>
+                <li><a href="#">ファンダイビング</a></li>
+              </ul>
+            </li>
+            <li class="sp-navi__items">
+              <a href="" class="sp-navi__title"><span class="sp-nav__icon"></span>よくある質問</a>
+            </li>
+            <li class="sp-navi__items">
+              <a href="" class="sp-navi__title"><span class="sp-nav__icon"></span>プライバシー
+                <br>ポリシー</a>
+            </li>
+            <li class="sp-navi__items">
+              <a href="" class="sp-navi__title"><span class="sp-nav__icon"></span>利用規約</a>
+            </li>
+            <li class="sp-navi__items">
+              <a href="" class="sp-navi__title"><span class="sp-nav__icon"></span>お問い合わせ</a>
+            </li>
+
+          </ul>
+          
+        </nav>
+      </div>
+      </div>
+  
+
 
   </header>
   <main>
@@ -43,8 +116,12 @@
   </footer>
 
   <!-- ボタン -->
-  <a href="#" class="button">View more<span class="button__arrow"></span></a>
+  <!-- 
+  <div class="button">
+  <a href="#" class="button__button">View more<span class="button__arrow"></span></a>
   <div class="button__shadow"></div>
+  </div>
+  -- >
 
   <!-- セクションタイトル -->
   <div class="section-title">
