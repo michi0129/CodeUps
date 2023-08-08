@@ -1,15 +1,10 @@
 @use "global" as *;
 .sp-nav {
-    display: none;
-    transition: all .5s;
-}
-
-.sp-nav.is-active {
-    display: flex;
-    column-gap: rem(29);
-    position: fixed;
+    display: block;
+    position: absolute;
     top: 0;
-    left: 0;
+    left: rem(-392);
+    right: 0;
     padding-top: rem(80);
     padding-right: rem(37);
     padding-left: rem(37);
@@ -18,5 +13,44 @@
     z-index: 0;
     cursor: pointer;
     background-color: $green;
+    color: $white;
+    letter-spacing: 0.05em;
+    opacity: 0;
+    transition: all .5s;
 }
 
+.sp-nav.is-active {
+    opacity: 1;
+    left: 0;
+}
+
+.sp-navi__container {
+    display: flex;
+    column-gap: rem(29);
+}
+
+.sp-navi__left,
+.sp-navi__right {
+    margin-top: rem(24);
+}
+
+.sp-navi__items:not(:first-child) {
+    margin-top: rem(40);
+}
+
+.sp-navi__title {
+    font-weight: $bold;
+    position: relative;
+}
+
+.sp-navi__title img {
+    position: absolute;
+    display: block;
+    width: rem(18);
+    height: rem(18);
+    left: rem(-22);
+}
+
+.sp-navi__item li {
+    margin-top: rem(24);
+}
