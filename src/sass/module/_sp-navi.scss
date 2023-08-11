@@ -17,7 +17,23 @@
     letter-spacing: 0.05em;
     opacity: 0;
     transition: all .5s;
+    @include mq(md) {
+        display: none;
+    }
 }
+
+/*
+.sp-nav--footer {
+    display: block;
+    position: inherit;
+    padding: 0 rem(26) rem(40) rem(37);
+    width: 100%;
+    cursor: pointer;
+    color: $white;
+    letter-spacing: 0.05em;
+    transition: all .5s;
+}
+*/
 
 .sp-nav.is-active {
     opacity: 1;
@@ -33,6 +49,13 @@
 .sp-navi__right {
     margin-top: rem(24);
 }
+
+/*
+.sp-navi__left--footer,
+.sp-navi__right--footer {
+    margin-top: 0;
+}
+*/
 
 .sp-navi__items:not(:first-child) {
     margin-top: rem(40);

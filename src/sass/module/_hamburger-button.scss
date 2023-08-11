@@ -6,6 +6,9 @@
     height: rem(24);
     z-index: 1000;
     transition: all .5s;
+    @include mq(md) {
+        display: none;
+    }
 }
 
 .hamburger-button span {
