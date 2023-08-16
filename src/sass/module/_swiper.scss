@@ -1,0 +1,107 @@
+@use "global" as *;
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: rem(-25);
+    text-align: right;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #391E88;
+}
+
+.swiper-button {
+    @include mq(md) {
+        position: absolute;
+        display: flex;
+        column-gap: rem(80);
+        width: rem(240);
+        height: auto;
+        top: rem(23);
+        right: 12.5%;
+}
+}
+
+.swiper-button-prev {
+    display: none;
+    @include mq(md) {
+    position: relative;
+    display: block;
+    width: rem(80);
+    height: rem(80);
+    border: 1px solid $green;
+    border-radius: 50%;
+    }
+}
+
+.swiper-button-prev span::before {
+    @include mq(md) {
+        content: "";
+        position: absolute;
+    top: 50%;
+    right: 50%;
+	width: rem(50);
+    display: block;
+	height: 1px;
+	background: $green;
+    transform: translateX(50%);
+    }
+}
+
+.swiper-button-prev span::after {
+    @include mq(md) {
+        content: "";
+        position: absolute;
+    top: 46%;
+    left: 17%;
+	width: rem(8);
+    display: block;
+	height: 1px;
+	background: $green;
+    transform: translateX(50%);
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+}
+
+
+.swiper-button-next {
+    display: none;
+    @include mq(md) {
+    position: relative;
+    display: block;
+    width: rem(80);
+    height: rem(80);
+    border: 1px solid $green;
+    border-radius: 50%;
+    }
+}
+
+.swiper-button-next span::before {
+    @include mq(md) {
+        content: "";
+        position: absolute;
+    top: 50%;
+    right: 50%;
+	width: rem(50);
+    display: block;
+	height: 1px;
+	background: $green;
+    transform: translateX(50%);
+    }
+}
+
+.swiper-button-next span::after {
+    @include mq(md) {
+        content: "";
+        position: absolute;
+    top: 46%;
+    right: 17%;
+	width: rem(8);
+    display: block;
+	height: 1px;
+	background: $green;
+    transform: translateX(50%);
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+}

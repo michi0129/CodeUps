@@ -2,6 +2,7 @@
 
 .button {
     position: relative;
+    display: inline-block;
 }
 
 .button__button {
@@ -43,12 +44,17 @@
     transform: scale(1, 1);
 }
 
-.button__arrow {
+.button__button:hover span {
+    border-bottom: 1px solid $white;
+    border-right: 1px solid $white;
+}
+
+.button__button span {
     display: inline-block;
     position: absolute;
-    bottom: 50%;
+    bottom: 45%;
     width: rem(40);
-    height: rem(1);
+    height: rem(5);
     border-bottom: 1px solid $green;
     border-right: 1px solid $green;
     transform: translateY(-50%) skew(45deg);
