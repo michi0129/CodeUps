@@ -17,10 +17,6 @@
 .campaign__inner.inner {
     padding-right: 0;
     padding-left: 0;
-
-    @include mq(md) {
-        max-width: 100%;
-    }
 }
 
 .campaign__contents {

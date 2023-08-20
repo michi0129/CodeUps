@@ -31,6 +31,7 @@
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="./assets/js/jquery.inview.min.js"></script>
 
   <script defer src="./assets/js/script.js"></script>
 </head>
@@ -388,14 +389,12 @@
             </div>
           </div>
         </div>
-
         <!-- 前後の矢印 -->
         <div class="swiper-button">
           <div class="swiper-button-prev"><span></span></div>
           <div class="swiper-button-next"><span></span></div>
         </div>
       </div>
-
       <!-- ボタン -->
       <div class="campaign__button">
         <div class="button">
@@ -403,7 +402,6 @@
           <div class="button__shadow"></div>
         </div>
       </div>
-
     </section>
 
     <!-- About -->
@@ -418,13 +416,13 @@
           <div class="about__flex">
             <div class="about__catch">
               <div class="about__image">
-              <img src="./assets/images/common/about-sp.jpg" alt="">
+                <img src="./assets/images/common/about-sp.jpg" alt="シーサーと海中の魚の画像">
               </div>
               <p>Dive into<br>the Ocean</p>
             </div>
             <div class="about__content">
               <p class="about__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
               <!-- ボタン -->
               <div class="about__button">
                 <div class="button">
@@ -432,13 +430,183 @@
                   <div class="button__shadow"></div>
                 </div>
               </div>
+            </div>
+          </div>
+          <div class="about__coral"><img src="./assets/images/common/coral.png" alt="イソギンチャクのイラスト"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Information -->
+    <section class="info">
+      <div class="info__inner inner">
+        <!-- セクションタイトル -->
+        <div class="info__title section-title">
+          <h2 class="section-title__english"><span>i</span>nformation</h2>
+          <div class="section-title__japanese">ダイビング情報</div>
+        </div>
+        <div class="info__contents">
+          <div class="info__flex">
+            <div class="info__image">
+              <img src="./assets/images/common/info-pc.jpg" alt="熱帯魚の画像">
+            </div>
+            <div class="info__content">
+              <div class="info__content-title">ライセンス講習</div>
+              <p class="info__content-text">当店はダイビングライセンス（Cカード）世界最大の教育機関PADIの「正規店」として店舗登録されています。<br>
+                正規登録店として、安心安全に初めての方でも安心安全にライセンス取得をサポート致します。</p>
+              <!-- ボタン -->
+              <div class="about__button">
+                <div class="button">
+                  <a href="#" class="button__button">View more<span></span></a>
+                  <div class="button__shadow"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section class="blog">
+      <div class="blog__inner inner">
+        <!-- セクションタイトル -->
+        <div class="blog__title section-title section-title--white">
+          <h2 class="section-title__english secition-title__english--white"><span>b</span>log</h2>
+          <div class="section-title__japanese section-title__japanese--white">ブログ</div>
+        </div>
+        <div class="blog__contents">
+          <div class="blog__cards">
+            <!-- カード1個目 -->
+            <div class="blog__card">
+              <div class="blog__card-inner">
+                <div class="blog__image">
+                  <img src="./assets/images/common/blog1.jpg" alt="珊瑚の画像">
+                </div>
+                <div class="blog__text-block">
+                  <time datetime="2023-11-17" class="blog__date">2023.11/17</time>
+                  <div class="blog__card-title">ライセンス取得</div>
+                  <span class="blog__bar"></span>
+                  <p class="blog__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+                </div>
+              </div>
+            </div>
+            <!-- カード2個目 -->
+            <div class="blog__card">
+              <div class="blog__card-inner">
+                <div class="blog__image">
+                  <img src="./assets/images/common/blog2.jpg" alt="ウミガメの画像">
+                </div>
+                <div class="blog__text-block">
+                  <time datetime="2023-11-17" class="blog__date">2023.11/17</time>
+                  <div class="blog__card-title">ウミガメと泳ぐ</div>
+                  <span class="blog__bar"></span>
+                  <p class="blog__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+                </div>
+              </div>
+            </div>
+            <!-- カード3個目 -->
+            <div class="blog__card">
+              <div class="blog__card-inner">
+                <div class="blog__image">
+                  <img src="./assets/images/common/blog3.jpg" alt="カクレクマノミの画像">
+                </div>
+                <div class="blog__text-block">
+                  <time datetime="2023-11-17" class="blog__date">2023.11/17</time>
+                  <div class="blog__card-title">カクレクマノミ</div>
+                  <span class="blog__bar"></span>
+                  <p class="blog__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ボタン -->
+          <div class="blog__button">
+            <div class="button">
+              <a href="#" class="button__button">View more<span></span></a>
+              <div class="button__shadow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="blog__illust"><img src="./assets/images/common/fish-white.png" alt="魚
+            のイラスト"></div>
+    </section>
+
+    <!-- Voice -->
+    <section class="voice">
+      <div class="voice__inner inner">
+        <!-- セクションタイトル -->
+        <div class="voice__title section-title">
+          <h2 class="section-title__english"><span>v</span>oice</h2>
+          <div class="section-title__japanese">お客様の声</div>
+        </div>
+        <div class="voice__contents">
+          <div class="voice__cards">
+            <!-- カード1個目 -->
+            <div class="voice__card">
+              <div class="voice__card-inner">
+                <div class="voice__flex">
+                  <div class="voice__title-block">
+                    <div class="voice__card-subtitle">
+                      <p>20代(女性)</p>
+                      <span>ライセンス講習</span>
+                    </div>
+                    <div class="voice__card-title">ここにタイトルが入ります。ここにタイトル</div>
+                    <span class="voice__bar"></span>
+                  </div>
+                  <div class="voice__image">
+                    <img src="./assets/images/common/voice1.jpg" alt="女性の画像">
+                  </div>
+                </div>
+                <div class="voice__text-block">
+                  <p class="voice__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                    ここにテキストが入ります。ここにテキストが入ります。</p>
+                </div>
+              </div>
+            </div>
+            <!-- カード2個目 -->
+            <div class="voice__card">
+              <div class="voice__card-inner">
+                <div class="voice__flex">
+                  <div class="voice__title-block">
+                    <div class="voice__card-subtitle">
+                      <p>20代(男性)</p>
+                      <span>ファンダイビング</span>
+                    </div>
+                    <div class="voice__card-title">ここにタイトルが入ります。ここにタイトル</div>
+                    <span class="voice__bar"></span>
+                  </div>
+                  <div class="voice__image">
+                    <img src="./assets/images/common/voice2.jpg" alt="男性の画像">
+                  </div>
+                </div>
+                <div class="voice__text-block">
+                  <p class="voice__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                    ここにテキストが入ります。ここにテキストが入ります。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ボタン -->
+          <div class="voice__button">
+            <div class="button">
+              <a href="#" class="button__button">View more<span></span></a>
+              <div class="button__shadow"></div>
+            </div>
+          </div>
+          <div class="voice__illust"><img src="./assets/images/common/fish-green1.png" alt="魚のイラスト"></div>
+          <div class="voice__illust2"><img src="./assets/images/common/seahourse.png" alt="タツノオトシゴのイラスト"></div>
+        </div>
+      </div>
+    </section>
 
 
-          </div>
-          </div>
-          </div>
-          </div>
-          </section>
 
     <div class="inner">
 
