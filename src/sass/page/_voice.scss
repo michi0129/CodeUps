@@ -132,11 +132,21 @@
 .voice__image {
     width: rem(151);
     height: rem(117);
-
+    position: relative;
     @include mq(md) {
         width: rem(180);
         height: rem(140);
     }
+}
+
+.voice__image .color {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: $green;
 }
 
 .voice__image img {
