@@ -14,6 +14,14 @@
     }
 }
 
+.section-title__english--large {
+    font-size: rem(80);
+    line-height: 1;
+    @include mq(md) {
+        font-size: rem(80);
+    }
+}
+
 .section-title__english--white {
     @include mq(md) {
         color: $white;
@@ -33,6 +41,12 @@
     @include mq(md) {
         margin-top: 0.5rem;
     }
+}
+
+.section-title__japanese--small {
+    margin-top: rem(8);
+    font-size: rem(12);
+    line-height: 1;
 }
 
 .section-title__japanese--white {
