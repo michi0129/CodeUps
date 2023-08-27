@@ -41,12 +41,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         //slidesPerView: 1.2,
         slidesPerView: 'auto', // 自動調整
         // スライド間の余白
-        spaceBetween: '1.5rem',
-        
-
-
-
-
+        spaceBetween: 24,
         // 前後のスライドで止まらずにスライド
         freeMode: true,
         centeredSlides: false,
