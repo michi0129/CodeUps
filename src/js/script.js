@@ -39,31 +39,51 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         },
         // 次のスライドを少し見せる
         slidesPerView: 1.2,
+        //slidesPerView: 'auto', // 自動調整
         // スライド間の余白
-        spaceBetween: 24, 
+        spaceBetween: '6.4%',
+        
+
+
+
+
         // 前後のスライドで止まらずにスライド
-        freeMode: true, 
-        centeredSlides : true,
+        freeMode: true,
+        centeredSlides: false,
         // 前後の矢印
         navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
         },
 
+        //　ブレイクポイント     
+        breakpoints: {
+            768: {
+                slidesPerView: 3.5,
+                //slidesPerView: 'auto', // 自動調整
+                // スライド間の余白
+                spaceBetween: '2.7%',
+                centeredSlides: false,
+                //}
+                paddingLeft: 180, // 最初のスライドにだけ適用する余白
 
-//　ブレイクポイント     
-breakpoints: {
-    // 768px以上は次のスライドを見せない
-    768: {
-        slidesPerView: 3.5,
-         // スライド間の余白
-        spaceBetween: 40, 
-        centeredSlides : false,
-    //}
-}
-},
-        
-});
+        // スライド切り替え時のコールバック
+        on: {
+            slideChangeTransitionStart: function () {
+                // スライドが切り替わる際のアニメーションで余白をなくす
+                this.$el.find('.swiper-slide:first-child').css('padding-left', '0');
+            },
+            slideChangeTransitionEnd: function () {
+                アニメーション終了後に余白を再度設定
+                if (this.activeIndex === 0) {
+                    this.$el.find('.swiper-slide:first-child').css('padding-left', '50px');
+                }
+            }
+        },
+            },
+        },
+
+    });
 
 });
 
@@ -71,94 +91,94 @@ breakpoints: {
 //informationの画像エフェクト
 //要素の取得とスピードの設定
 var box = $('.info__image'),
-    speed = 700;  
+    speed = 700;
 
 //.info__imageの付いた全ての要素に対して下記の処理を行う
-box.each(function(){
+box.each(function () {
     $(this).append('<div class="color"></div>')
     var color = $(this).find($('.color')),
-    image = $(this).find('img');
+        image = $(this).find('img');
     var counter = 0;
 
-    image.css('opacity','0');
-    color.css('width','0%');
+    image.css('opacity', '0');
+    color.css('width', '0%');
     //inviewを使って背景色が画面に現れたら処理をする
-    color.on('inview', function(){
-        if(counter == 0){
-    $(this).delay(200).animate({'width':'100%'},speed,function(){
-                image.css('opacity','1');
-                $(this).css({'left':'0' , 'right':'auto'});
-                $(this).animate({'width':'0%'},speed);
-                })
+    color.on('inview', function () {
+        if (counter == 0) {
+            $(this).delay(200).animate({ 'width': '100%' }, speed, function () {
+                image.css('opacity', '1');
+                $(this).css({ 'left': '0', 'right': 'auto' });
+                $(this).animate({ 'width': '0%' }, speed);
+            })
             counter = 1;
-            }
-        });
+        }
+    });
 });
 
 //Voiceの画像エフェクト
 //要素の取得とスピードの設定
 var box = $('.voice__image'),
-    speed = 700;  
+    speed = 700;
 
 //.info__imageの付いた全ての要素に対して下記の処理を行う
-box.each(function(){
+box.each(function () {
     $(this).append('<div class="color"></div>')
     var color = $(this).find($('.color')),
-    image = $(this).find('img');
+        image = $(this).find('img');
     var counter = 0;
 
-    image.css('opacity','0');
-    color.css('width','0%');
+    image.css('opacity', '0');
+    color.css('width', '0%');
     //inviewを使って背景色が画面に現れたら処理をする
-    color.on('inview', function(){
-        if(counter == 0){
-    $(this).delay(200).animate({'width':'100%'},speed,function(){
-                image.css('opacity','1');
-                $(this).css({'left':'0' , 'right':'auto'});
-                $(this).animate({'width':'0%'},speed);
-                })
+    color.on('inview', function () {
+        if (counter == 0) {
+            $(this).delay(200).animate({ 'width': '100%' }, speed, function () {
+                image.css('opacity', '1');
+                $(this).css({ 'left': '0', 'right': 'auto' });
+                $(this).animate({ 'width': '0%' }, speed);
+            })
             counter = 1;
-            }
-        });
+        }
     });
+});
 
 //Priceの画像エフェクト
 //要素の取得とスピードの設定
 var box = $('.price__image'),
-speed = 700;  
+    speed = 700;
 
 //.info__imageの付いた全ての要素に対して下記の処理を行う
-box.each(function(){
-$(this).append('<div class="color"></div>')
-var color = $(this).find($('.color')),
-image = $(this).find('img');
-var counter = 0;
+box.each(function () {
+    $(this).append('<div class="color"></div>')
+    var color = $(this).find($('.color')),
+        image = $(this).find('img');
+    var counter = 0;
 
-image.css('opacity','0');
-color.css('width','0%');
-//inviewを使って背景色が画面に現れたら処理をする
-color.on('inview', function(){
-    if(counter == 0){
-$(this).delay(200).animate({'width':'100%'},speed,function(){
-            image.css('opacity','1');
-            $(this).css({'left':'0' , 'right':'auto'});
-            $(this).animate({'width':'0%'},speed);
+    image.css('opacity', '0');
+    color.css('width', '0%');
+    //inviewを使って背景色が画面に現れたら処理をする
+    color.on('inview', function () {
+        if (counter == 0) {
+            $(this).delay(200).animate({ 'width': '100%' }, speed, function () {
+                image.css('opacity', '1');
+                $(this).css({ 'left': '0', 'right': 'auto' });
+                $(this).animate({ 'width': '0%' }, speed);
             })
-        counter = 1;
+            counter = 1;
         }
     });
 });
 
 var topBtn = $('.to-top');
-  topBtn.hide();
+topBtn.hide();
 
-  // ボタンの表示設定
-  $(window).scroll(function () {
+// ボタンの表示設定
+$(window).scroll(function () {
     if ($(this).scrollTop() > 70) {
-      // 指定px以上のスクロールでボタンを表示
-      topBtn.fadeIn();
+        // 指定px以上のスクロールでボタンを表示
+        topBtn.fadeIn();
     } else {
-      // 画面が指定pxより上ならボタンを非表示
-      topBtn.fadeOut();
+        // 画面が指定pxより上ならボタンを非表示
+        topBtn.fadeOut();
     }
-  });
+});
