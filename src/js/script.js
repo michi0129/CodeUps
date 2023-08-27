@@ -76,7 +76,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
             slideChangeTransitionEnd: function () {
                 アニメーション終了後に余白を再度設定
                 if (this.activeIndex === 0) {
-                    this.$el.find('.swiper-slide:first-child').css('padding-left', '50px');
+                    this.$el.find('.swiper-slide:first-child').css('padding-left', '180px');
                 }
             }
         },
