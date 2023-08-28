@@ -41,7 +41,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         //slidesPerView: 1.2,
         slidesPerView: 'auto', // 自動調整
         // スライド間の余白
-        spaceBetween: 24,
+        spaceBetween: '6.4%',
         // 前後のスライドで止まらずにスライド
         freeMode: true,
         centeredSlides: false,
@@ -54,11 +54,11 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         //　ブレイクポイント     
         breakpoints: {
             768: {
-                slidesPerView: 3.5,
+                //slidesPerView: 3.5,
                 //slidesPerView: 'auto', // 自動調整
                 // スライド間の余白
-                spaceBetween: '3%',
-                centeredSlides: false,
+                spaceBetween: '2.7%',
+                //centeredSlides: false,
                 //}
                 //paddingLeft: 140, // 最初のスライドにだけ適用する余白
 
