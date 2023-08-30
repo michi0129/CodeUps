@@ -83,7 +83,7 @@
 }
 
 .about__content {
-    margin-top: rem(15);
+    margin-top: rem(19.2);
     @include mq(md) {
         margin-top: 0;
         width: 50%;
@@ -93,7 +93,7 @@
 .about__text {
     font-size: rem(16);
     line-height: 1.5;
-    letter-spacing: 0.05em;
+    letter-spacing: normal;
 
     @include mq(md) {
         letter-spacing: 0.04em;
@@ -102,8 +102,10 @@
 }
 
 .about__button {
-    margin-top: rem(50);
+    margin-top: rem(38.4);
     text-align: center;
+    padding-left: rem(69);
+    padding-right: rem(70);
 
     @include mq(md) {
         margin-top: rem(40);

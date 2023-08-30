@@ -9,13 +9,13 @@
     display: inline-block;
     position: relative;
     width: rem(202);
-    padding: rem(16) rem(88) rem(16) rem(40);
+    padding: rem(16) rem(88) rem(16) rem(36.8);
     background-color: $white;
     font-family: $second-font-family;
     font-size: rem(14);
     color: $green;
     line-height: 1.5;
-    letter-spacing: 0.05em;
+    letter-spacing: -0.01em;
     white-space: nowrap;
     border: 1px solid $green;
     overflow: hidden;

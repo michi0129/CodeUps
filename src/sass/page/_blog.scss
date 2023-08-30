@@ -32,7 +32,7 @@
 }
 
 .blog__contents {
-    margin-top: rem(24);
+    margin-top: rem(27.2);
 
     @include mq(md) {
         margin-top: rem(80);
@@ -71,7 +71,7 @@
 }
 
 .blog__text-block {
-    margin-top: rem(24);
+    margin-top: rem(16);
 }
 
 .blog__image {
@@ -115,12 +115,14 @@
     margin-top: rem(16);
     font-size: rem(16);
     line-height: 1.5;
-    letter-spacing: 0.05em;
+    letter-spacing: normal;
 }
 
 .blog__button {
     text-align: center;
     margin-top: rem(40);
+    padding-left: rem(64);
+    padding-right: rem(70);
 
     @include mq(md) {
         margin-top: rem(80);

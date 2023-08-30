@@ -34,6 +34,11 @@
     z-index: 1000;
     color: $white;
     text-align: center;
+    max-width: rem(248);
+    @include mq(md) {
+
+    }
+
 }
 
 .mv__main-catch {
@@ -49,11 +54,11 @@
 }
 
 .mv__second-catch {
-    margin-top: rem(5);
+    margin-top: rem(8);
     font-size: rem(20);
     font-family: $second-font-family;
     line-height: 1;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.01em;
     @include mq(md) {
 
     }
