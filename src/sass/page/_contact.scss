@@ -2,7 +2,7 @@
 
 .contact {
     padding-top: rem(80);
-    padding-bottom: rem(100);
+    padding-bottom: rem(58);
     overflow: hidden;
 
     @include mq(md) {
@@ -66,7 +66,7 @@
     width: 100%;
     height: rem(1);
     background-color: $green;
-    margin-top: rem(6);
+    margin-top: rem(1);
     @include mq(md) {
         margin-top: rem(8);   
     }
@@ -115,7 +115,8 @@
 }
 
 .contact__contents {
-    margin-top: rem(40);
+    width: 100vw;
+    margin: rem(40) calc(50% - 50vw);
     @include mq(md) {
         display: flex;
         flex-direction: column;
@@ -131,20 +132,22 @@
     font-size: rem(14);
     line-height: 1;
     color: $green;
-    margin-top: rem(8);
+    margin-top: rem(12);
     text-align: center;
     
 }
 
 .contact__button {
-    margin-top: rem(40);
+    margin-top: rem(42);
+    padding-left: rem(69);
+    padding-right: rem(70);
     text-align: center;
 }
 
 .contact__illust {
     position: absolute;
     top: rem(-26);
-    right: rem(-20);
+    right: rem(-25);
     width: rem(109);
     height: rem(50);
     @include mq(md) {
