@@ -3,27 +3,33 @@
 .footer-navi {
     display: block;
     position: inherit;
-    padding: 0 rem(26) rem(40) rem(37);
+    padding: 0 rem(26) rem(28.8) rem(37);
     width: 100%;
     cursor: pointer;
     color: $white;
     letter-spacing: 0.05em;
     transition: all .5s;
+    margin-top: rem(37);
 }
 
 .footer-navi__container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    column-gap: rem(29);
-    height: rem(512);
+    column-gap: rem(40);
+    height: rem(467);
+    letter-spacing: normal;
     @include mq(md) {
         height: rem(250);   
     }
 }
 
+.footer-navi__items--line-height {
+    line-height: 1.2;
+}
+
 .footer-navi__items:not(:first-child) {
-    margin-top: rem(40);
+    margin-top: rem(36);
 }
 
 .footer-navi__items:nth-child(5) {
@@ -43,6 +49,10 @@
     position: relative;
 }
 
+.footer-navi__title--line-height {
+    line-height: 1.2;
+}
+
 .footer-navi__title img {
     position: absolute;
     display: block;
@@ -52,5 +62,11 @@
 }
 
 .footer-navi__item li {
-    margin-top: rem(24);
+    margin-top: rem(27);
+    line-height: 1;
 }
+
+.footer-navi__item li:first-child {
+    margin-top: rem(21);
+}
+
