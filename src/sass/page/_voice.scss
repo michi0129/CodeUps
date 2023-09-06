@@ -6,16 +6,16 @@
 
     @include mq(md) {
         position: relative;
-        padding-top: rem(140);
-        padding-bottom: rem(140);
+        padding-top: rem(135);
+        padding-bottom: rem(138);
         overflow: hidden;
     }
 }
 
 .voice .inner {
     @include mq(md) {
-        padding-left: 0;
-        padding-right: 0;
+        /*padding-left: 0;
+        padding-right: 0;*/
     }
 }
 
@@ -31,6 +31,7 @@
 .voice__cards {
     @include mq(md) {
         max-width: rem(1080);
+        margin: auto;
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -48,6 +49,7 @@
 
     @include mq(md) {
         max-width: rem(520);
+        margin: 0;
     }
 }
 
@@ -72,7 +74,7 @@
     column-gap: rem(13);
 
     @include mq(md) {
-        height: rem(140);
+        /*height: rem(140);*/
         column-gap: rem(16);
     }
 }
@@ -81,8 +83,10 @@
     width: rem(149);
 
     @include mq(md) {
-        width: rem(276);
-        margin-top: rem(16);
+        /*width: rem(276);*/
+        margin-top: rem(24);
+        max-width: rem(280);
+        width: 100%;
     }
 }
 
@@ -92,7 +96,7 @@
     @include mq(md) {
         display: flex;
         justify-content: space-between;
-        align-items: baseline;
+        /*align-items: baseline;*/
     }
 }
 
@@ -102,6 +106,7 @@
 
     @include mq(md) {
         line-height: 1;
+        margin-top: rem(19);
     }
 }
 
@@ -113,7 +118,7 @@
     color: $green;
 
     @include mq(md) {
-        padding: rem(6) rem(16);
+        padding: rem(10) rem(15);
     }
 }
 
@@ -138,18 +143,31 @@
 }
 
 .voice__image {
-    width: rem(151);
-    height: rem(117);
+    aspect-ratio: 151 / 117;
+    overflow: hidden;
+    height: auto;
+    max-width: rem(151);
+    width: 100%;
+    /*width: rem(151);
+    height: rem(117);*/
     position: relative;
+    margin-top: rem(10);
+
     @include mq(md) {
-        width: rem(180);
-        height: rem(140);
+        aspect-ratio: 180 / 140;
+        overflow: hidden;
+        height: auto;
+        max-width: rem(180);
+        width: 100%;
+        /*width: rem(180);*/
+        /*height: rem(140);*/
+        margin-top: 0;
     }
 }
 
 .voice__image .color {
     position: absolute;
-    top: 0;
+    bottom: 0;
     right: 0;
     width: 100%;
     height: 100%;
@@ -161,7 +179,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    margin-top: rem(9.6);
 }
 
 .voice__text-block {
@@ -176,6 +193,7 @@
     font-size: rem(16);
     line-height: 1.5;
     letter-spacing: normal;
+
     @include mq(md) {
         letter-spacing: normal;
     }
@@ -198,8 +216,8 @@
     @include mq(md) {
         display: block;
         position: absolute;
-        top: rem(-206);
-        left: rem(-72);
+        top: rem(-215);
+        left: rem(-80);
         width: rem(301);
         height: rem(138);
     }
@@ -211,8 +229,8 @@
     @include mq(md) {
         display: block;
         position: absolute;
-        bottom: rem(-71);
-        right: rem(4);
+        bottom: rem(-64);
+        right: 0;
         width: rem(71);
         height: rem(161);
     }

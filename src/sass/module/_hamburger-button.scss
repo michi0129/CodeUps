@@ -6,6 +6,7 @@
     height: rem(24);
     z-index: 1000;
     transition: all .5s;
+
     @include mq(md) {
         display: none;
     }
@@ -18,7 +19,7 @@
 .hamburger-button span:first-child {
     position: absolute;
     top: 0;
-    width: 100%;
+    width: 120%;
     height: rem(1);
     background-color: $white;
 }
@@ -26,7 +27,7 @@
 .hamburger-button span:nth-child(2) {
     position: absolute;
     top: 50%;
-    width: 100%;
+    width: 120%;
     height: rem(1);
     background-color: $white;
 }
@@ -34,14 +35,14 @@
 .hamburger-button span:nth-child(3) {
     position: absolute;
     bottom: 0;
-    width: 100%;
+    width: 120%;
     height: rem(1);
     background-color: $white;
 }
 
 .hamburger-button.is-active span:first-child {
     -webkit-transform: translateY(10px) rotate(-315deg);
-    transform: translateY(rem(10)) rotate(-315deg);
+    transform: translateY(rem(10)) rotate(-323deg);
 }
 
 .hamburger-button.is-active span:nth-child(2) {
@@ -50,7 +51,6 @@
 
 .hamburger-button.is-active span:nth-child(3) {
     -webkit-transform: translateY(-10px) rotate(315deg);
-    transform: translateY(rem(10)) rotate(315deg);
+    transform: translateY(rem(10)) rotate(323deg);
     top: 0;
 }
-
