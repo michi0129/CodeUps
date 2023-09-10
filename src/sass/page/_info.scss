@@ -12,8 +12,11 @@
 }
 
 .info__contents {
-    margin-top: rem(25.6);
+    max-width: rem(600);
+    margin: rem(25.6) auto 0;
+    width: 100%;
     @include mq(md) {
+        max-width: unset;
         margin-top: rem(40);
     }
 }

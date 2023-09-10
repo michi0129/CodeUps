@@ -12,6 +12,7 @@
     }
 }
 
+/*
 .contact .inner {
     padding-left: rem(40);
     padding-right: rem(40);
@@ -21,6 +22,7 @@
     }
     
 }
+*/
 
 .contact__inner {
     @include mq(md) {
@@ -53,7 +55,13 @@
 }
 
 .contact__logo {
+    max-width: rem(600);
+    margin: 0 auto;
+    width: 100%;
     text-align: center;
+    @include mq(md) {
+        max-width: unset;;
+    }
 }
 
 .contact__logo img {
@@ -79,11 +87,14 @@
 }
 
 .contact__address {
+    max-width: rem(600);
+    margin: rem(16) auto 0;
+    width: 100%;
     text-align: center;
-    margin-top: rem(16);
     @include mq(md) {
         display: flex; 
         margin-top: rem(24);
+        max-width: unset;
     }
 }
 

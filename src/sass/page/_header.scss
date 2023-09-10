@@ -2,7 +2,7 @@
 
 .header {
     width: 100vw;
-    /*height: rem(90);*/
+    height: rem(90);
     background-color: rgba(13, 41, 54, 0.68);
     position: fixed;
     top: 0;
@@ -14,14 +14,16 @@
 }
 
 .header__inner {
-    padding: rem(21) rem(15);
-    height: 100%;
+    /*padding: rem(21) rem(15);*/
+    padding: 0 rem(15);
+    height: inherit;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     @include mq(md) {
-        padding: rem(26) rem(40);
+        /*padding: rem(26) rem(40);*/
+        padding: 0 rem(40);
     }
 }
 

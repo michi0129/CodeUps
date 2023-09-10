@@ -70,6 +70,12 @@
     position: relative;
 }
 
+.footer-navi__title:hover {
+    @include mq(md) {
+        opacity: 0.5;
+    }
+}
+
 .footer-navi__title--line-height {
     line-height: 1.2;
 }
@@ -88,6 +94,12 @@
 
     @include mq(md) {
         margin-top: rem(27);
+    }
+}
+
+.footer-navi__item li a:hover {
+    @include mq(md) {
+        opacity: 0.5;
     }
 }
 

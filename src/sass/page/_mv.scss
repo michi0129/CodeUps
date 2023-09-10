@@ -4,9 +4,9 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    @include mq(md) {
-        height: auto;
-    }
+    /*@include mq(md) {
+        height: 100vh;
+    }*/
 }
 
 .mv__images {

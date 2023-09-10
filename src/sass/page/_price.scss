@@ -20,8 +20,12 @@
 
 .price__flex {
     margin-top: rem(27.2);
+    max-width: rem(600);
+    margin: 0 auto;
+    width: 100%;
 
     @include mq(md) {
+        max-width: unset;
         margin-top: rem(40);
         display: flex;
         flex-direction: row-reverse;
