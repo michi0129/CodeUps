@@ -34,7 +34,10 @@
         margin: auto;
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: left;
+        flex-wrap: wrap;
+        row-gap: rem(80);
+        column-gap: rem(40);
     }
 }
 
@@ -48,7 +51,7 @@
     background-color: $white;
 
     @include mq(md) {
-        max-width: rem(520);
+        width: calc((100% - rem(40)) / 2);
         margin: 0;
     }
 }
@@ -220,7 +223,7 @@
         display: block;
         position: absolute;
         top: rem(-215);
-        left: rem(-80);
+        left: calc(50% - min(50vw, 635px));
         width: rem(301);
         height: rem(138);
     }

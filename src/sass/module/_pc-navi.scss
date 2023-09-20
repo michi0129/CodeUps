@@ -13,6 +13,14 @@
 .pc-navi__items {
     text-align: center;
     position: relative;
+    height: inherit;
+}
+
+.pc-navi__title {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    justify-content: center;
 }
 
 .pc-navi__title::after {

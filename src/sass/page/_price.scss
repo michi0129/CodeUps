@@ -29,7 +29,7 @@
         margin-top: rem(40);
         display: flex;
         flex-direction: row-reverse;
-        justify-content: space-between;
+        column-gap: rem(93);
     }
 }
 
@@ -120,10 +120,12 @@
     padding-left: 0;
 
     @include mq(md) {
-        width: rem(392);
         font-size: rem(16);
         line-height: 1;
         padding-bottom: rem(14);
+        display: block;
+        width: min(300px , 90%);
+        margin-right: 40px;
     }
 }
 
@@ -162,6 +164,6 @@
         width: rem(437);
         height: rem(201);
         bottom: rem(-37);
-        left: rem(-54);
+        left: calc(50% - min(50vw, 625px));
     }
 }

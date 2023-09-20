@@ -7,10 +7,10 @@
         position: relative;
         margin-top: 0;
         padding-top: rem(97);
-        background-image: url('../images/common/blog-bg.jpg');
+        /*background-image: url('../images/common/blog-bg.jpg');
         background-repeat: no-repeat;
         background-size: contain;
-        overflow: hidden;
+        overflow: hidden;*/
     }
 }
 
@@ -39,6 +39,22 @@
     }
 }
 
+.blog__contents::before {
+    @include mq(md) {
+    background-image: url("../images/common/blog-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    display: block;
+    height: rem(500);
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    }
+}
+
 .blog__cards {
     width: 100%;
     margin: auto;
@@ -47,7 +63,16 @@
         max-width: rem(1080);
         width: 100%;
         margin: auto;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: rem(80);
+        column-gap: rem(40);
+        justify-content: left;
+    }
+}
+
+.blog__cards a {
+    @include mq(md) {
+        width: calc((100% - 80px) / 3);
     }
 }
 
