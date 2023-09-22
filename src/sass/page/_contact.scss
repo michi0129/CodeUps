@@ -47,8 +47,7 @@
 
 .contact__access {
     @include mq(md) {
-        /*max-width: rem(440);
-        width: 100%;*/
+        width: 52.5%;
         padding-right: rem(82);
         border-right: rem(1) solid $green;
     }
@@ -82,7 +81,7 @@
     background-color: $green;
     margin-top: rem(1);
     @include mq(md) {
-        margin-top: rem(1);   
+        margin-top: rem(2.5);   
     }
 }
 
@@ -91,10 +90,14 @@
     margin: rem(16) auto 0;
     width: 100%;
     text-align: center;
+    padding-left: rem(24);
+    padding-right: rem(24);
     @include mq(md) {
         display: flex; 
         margin-top: rem(24);
         max-width: unset;
+        padding-left: rem(0);
+        padding-right: rem(0);
     }
 }
 

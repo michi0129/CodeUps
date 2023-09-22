@@ -159,14 +159,17 @@
     font-size: rem(16);
     font-weight: $medium;
     line-height: 1.5;
-    margin-top: rem(7);
+    margin-top: rem(4);
+    @include mq(md) {
+        margin-top: rem(7);
+    }
 }
 
 .campaign__card-bar {
     display: block;
     height: rem(1);
     background-color: $green;
-    margin-top: rem(11.2);
+    margin-top: rem(7);
 }
 
 .campaign__card-contents {

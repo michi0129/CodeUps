@@ -163,7 +163,7 @@
         position: absolute;
         width: rem(437);
         height: rem(201);
-        bottom: rem(-37);
-        left: calc(50% - min(50vw, 625px));
+        bottom: rem(-40);
+        left: calc(50% - min(50vw, rem(622)));
     }
 }

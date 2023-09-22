@@ -15,8 +15,12 @@
 }
 
 .blog .inner {
-    /*padding-left: rem(21);
-    padding-right: rem(21);*/
+    padding-left: rem(20);
+    padding-right: rem(20);
+    @include mq(md) {
+        padding-left: rem(25);
+        padding-right: rem(25);
+    }
 }
 
 .blog__title {
@@ -58,8 +62,11 @@
 .blog__cards {
     width: 100%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(38);
     @include mq(md) {
-        display: flex;
+        flex-direction: row;
         max-width: rem(1080);
         width: 100%;
         margin: auto;

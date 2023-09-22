@@ -23,7 +23,7 @@
     margin-top: rem(44.8);
 
     @include mq(md) {
-        margin-top: rem(30);
+        margin-top: rem(33);
         position: relative;
     }
 }
@@ -74,8 +74,8 @@
 
 .voice__flex {
     display: flex;
-    /*column-gap: rem(13);*/
-    justify-content: space-between;
+    justify-content: left;
+    column-gap: rem(12);
     align-items: end;
 
     @include mq(md) {
@@ -223,7 +223,7 @@
         display: block;
         position: absolute;
         top: rem(-215);
-        left: calc(50% - min(50vw, 635px));
+        left: calc(50% - min(50vw, rem(620)));
         width: rem(301);
         height: rem(138);
     }
