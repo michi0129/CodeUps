@@ -36,9 +36,9 @@
     z-index: 999;
     color: $white;
     text-align: center;
-    max-width: rem(248);
+    /*max-width: rem(248);*/
     @include mq(md) {
-        max-width: rem(496);
+        /*max-width: rem(496);*/
         top: 55%;
     }
 
@@ -50,6 +50,7 @@
     line-height: 1;
     letter-spacing: 0.54em;
     font-family: $Lato;
+    text-indent: 0.5em;
     @include mq(md) {
         font-size: rem(80);
         line-height: 1.25;

@@ -1,14 +1,14 @@
 @use "global" as *;
 
 .voice {
-    padding-top: rem(78.4);
-    padding-bottom: rem(80);
+    /*padding-top: rem(78.4);
+    padding-bottom: rem(80);*/
 
     @include mq(md) {
         position: relative;
-        padding-top: rem(135);
+        /*padding-top: rem(135);
         padding-bottom: rem(138);
-        overflow: hidden;
+        overflow: hidden;*/
     }
 }
 
@@ -17,6 +17,13 @@
         /*padding-left: 0;
         padding-right: 0;*/
     }
+}
+
+.voice__inner {
+    margin-top: rem(78.4);
+    @include mq(md) {
+        margin-top: rem(135);
+}
 }
 
 .voice__contents {
@@ -134,6 +141,8 @@
     font-weight: $medium;
     letter-spacing: normal;
     line-height: 1.5;
+    border-bottom: 1px solid $green;
+    padding-top: rem(1.6);
 
     @include mq(md) {
         margin-top: rem(8);
@@ -141,12 +150,12 @@
     }
 }
 
-.voice__bar {
+/*.voice__bar {
     display: block;
     height: rem(1);
     background-color: $green;
     margin-top: rem(1.6);
-}
+}*/
 
 .voice__image {
     aspect-ratio: 151 / 117;
@@ -208,8 +217,8 @@
 .voice__button {
     text-align: center;
     margin-top: rem(36.8);
-    padding-left: rem(67.2);
-    padding-right: rem(68.8);
+    /*padding-left: rem(67.2);
+    padding-right: rem(68.8);*/
 
     @include mq(md) {
         margin-top: rem(80);
@@ -223,7 +232,7 @@
         display: block;
         position: absolute;
         top: rem(-215);
-        left: calc(50% - min(50vw, rem(620)));
+        left: calc(50% - min(47vw, rem(620)));
         width: rem(301);
         height: rem(138);
     }

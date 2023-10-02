@@ -14,6 +14,10 @@
     }
 }
 
+.section-title__english::first-letter {
+    text-transform: uppercase;
+}
+
 .section-title__english--large {
     font-size: rem(80);
     line-height: 1;

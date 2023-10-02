@@ -1,13 +1,13 @@
 @use "global" as *;
 
 .contact {
-    padding-top: rem(80);
-    padding-bottom: rem(58);
+    /*padding-top: rem(80);
+    padding-bottom: rem(58);*/
     overflow: hidden;
 
     @include mq(md) {
-        padding-top: rem(151);
-        padding-bottom: rem(149);
+        /*padding-top: rem(151);
+        padding-bottom: rem(149);*/
         
     }
 }
@@ -25,10 +25,12 @@
 */
 
 .contact__inner {
+    margin-top: rem(80);
     @include mq(md) {
         /*max-width: rem(1080);
         width: 100%;*/
         position: relative;
+        margin-top: rem(151);
     }
 
 }
@@ -142,9 +144,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: auto;
-        max-width: rem(315);
+        /*margin: auto;
+        max-width: rem(315);*/
         width: 100%;
+        margin: 0;
     }
 }
 
@@ -159,12 +162,12 @@
 
 .contact__button {
     margin-top: rem(42);
-    padding-left: rem(69);
-    padding-right: rem(70);
+    /*padding-left: rem(69);
+    padding-right: rem(70);*/
     text-align: center;
     @include mq(md) {
         margin-top: rem(40);
-        padding-left: rem(65);
+        /*padding-left: rem(65);*/
     }
 }
 
@@ -176,7 +179,7 @@
     height: rem(50);
     @include mq(md) {
     top: rem(-51);
-    right: calc(50% - min(50vw, 675px));
+    right: calc(50% - min(48vw, rem(670)));
     width: rem(301);
     height: rem(138);
     }

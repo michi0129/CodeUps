@@ -19,7 +19,7 @@
         height: auto;
         top: 4.5%;
         /*right: -0.8%;*/
-        right: calc(50% - min(50vw,550px));
+        right: calc(50% - min(50vw,rem(550)));
         justify-content: space-between;
 }
 }

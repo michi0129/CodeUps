@@ -7,9 +7,11 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         if ($('.js-hamburger').hasClass('is-active')) {
             $('.js-hamburger').removeClass('is-active');
             $(".sp-nav").removeClass('is-active');
+            $("body").removeClass("is-active");
         } else {
             $('.js-hamburger').addClass('is-active');
             $(".sp-nav").addClass('is-active');
+            $("body").addClass("is-active");
         }
     });
 
@@ -20,6 +22,8 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         //},
         clickable: false,
         loop: true,
+        effect: 'fade',
+        speed: 600,
         autoplay: {
             delay: 5000,
             disableOnInteraction: false,

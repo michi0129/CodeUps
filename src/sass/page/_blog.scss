@@ -1,11 +1,11 @@
 @use "global" as *;
 
 .blog {
-    margin-top: rem(80);
+    /*margin-top: rem(80);*/
 
     @include mq(md) {
         position: relative;
-        margin-top: 0;
+        /*margin-top: 0;*/
         padding-top: rem(97);
         /*background-image: url('../images/common/blog-bg.jpg');
         background-repeat: no-repeat;
@@ -21,6 +21,14 @@
         padding-left: rem(25);
         padding-right: rem(25);
     }
+}
+
+.blog__inner {
+    margin-top: rem(80);
+    @include mq(md) {
+        margin-top: 0;
+    }
+
 }
 
 .blog__title {
@@ -59,6 +67,7 @@
     }
 }
 
+/*
 .blog__cards {
     width: 100%;
     margin: auto;
@@ -79,7 +88,35 @@
 
 .blog__cards a {
     @include mq(md) {
-        width: calc((100% - 80px) / 3);
+        width: calc((100% - rem(80)) / 3);
+    }
+}
+*/
+
+.blog__cards--grid {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: rem(40) 0;/*縦方向に40px、横方向に0pxの余白を指定する*/
+    @include mq(md) {
+        max-width: rem(1080);
+        width: 100%;
+        margin: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: rem(80) rem(40);/*縦方向に80px、横方向に40pxの余白を指定する*/
+    }
+}
+
+.blog__cards--grid a {
+    @include mq(md) {
+        transition: 1.0s;
+    }
+}
+
+.blog__cards--grid a:hover {
+    @include mq(md) {
+        opacity: 0.5;
     }
 }
 
@@ -93,18 +130,6 @@
     background-color: $white;
     @include mq(md) {
         max-width: rem(333);
-    }
-}
-
-.blog__cards a {
-    @include mq(md) {
-        transition: 1.0s;
-    }
-}
-
-.blog__cards a:hover {
-    @include mq(md) {
-        opacity: 0.5;
     }
 }
 
@@ -171,8 +196,8 @@
 .blog__button {
     text-align: center;
     margin-top: rem(40);
-    padding-left: rem(64);
-    padding-right: rem(70);
+    /*padding-left: rem(64);
+    padding-right: rem(70);*/
 
     @include mq(md) {
         margin-top: rem(80);
@@ -185,8 +210,8 @@
     @include mq(md) {
         position: absolute;
         display: block;
-        top: rem(12);
-        left: rem(100);
+        top: rem(13);
+        left: calc(50% - min(47vw, rem(621)));
         width: rem(376);
         height: rem(120);
     }

@@ -1,14 +1,5 @@
 @use "global" as *;
 
-.campaign {
-    margin-top: rem(40);
-
-    @include mq(md) {
-        /*position: relative;*/
-        margin-top: rem(115);
-    }
-}
-
 .campaign .inner {
     /*padding-left: 0;
     padding-right: 0;*/
@@ -25,10 +16,12 @@
     max-width: rem(345);*/
     min-width: rem(345);
     width: 100%;
+    margin-top: rem(40);
     @include mq(md) {
         /*max-width: rem(1130);*/
         width: 100%;
         position: relative;
+        margin-top: rem(115);
     }
 }
 
@@ -43,14 +36,12 @@
 }
 
 .campaign__contents .swiper {
-    /*padding-left: rem(24);*/
-    /*padding-right: rem(24);*/
-    padding-bottom: rem(38.4);
+    /*padding-left: rem(24);
+    padding-right: rem(24);*/
 
     @include mq(md) {
-        /*padding-left: rem(40);*/
-        padding-bottom: rem(80);
-        /*max-width: rem(1440);
+        /*padding-left: rem(40);
+        max-width: rem(1440);
         width: 100%;*/
     }
 }
@@ -109,6 +100,8 @@
     height: 100%;
     padding: 0 0 0 0;
     box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
     @include mq(md) {
         /*width: auto;*/
         width: rem(333);
@@ -117,6 +110,9 @@
 
 .campaign__card-body {
     padding: rem(16);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
     @include mq(md) {
         padding: rem(24) rem(16) rem(30) rem(16);
     }
@@ -148,6 +144,7 @@
     line-height: 1;
     padding: rem(8) rem(10.4) rem(8) rem(12);
     letter-spacing: 0.01em;
+    width: fit-content;
 
     @include mq(md) {
         font-size: rem(12);
@@ -160,6 +157,7 @@
     font-weight: $medium;
     line-height: 1.5;
     margin-top: rem(4);
+    flex-grow: 1;
     @include mq(md) {
         margin-top: rem(7);
     }
@@ -186,8 +184,8 @@
 
     @include mq(md) {
         font-size: rem(16);
-        width: 171px;
-        margin-left: 58px;
+        width: rem(171);
+        margin-left: rem(58);
         line-height: 1;
     }
 }
@@ -239,10 +237,12 @@
 
 
 .campaign__button {
-    padding-left: 84px;
-    padding-right: 85px;
+    /*padding-left: 84px;
+    padding-right: 85px;*/
     text-align: center;
+    margin-top: rem(37.4);
     @include mq(md) {
     text-align: center;
+    margin-top: rem(79);
     }
 }

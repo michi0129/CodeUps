@@ -1,17 +1,16 @@
 @use "global" as *;
 
 .about {
-    margin-top: rem(80);
-    padding-bottom: rem(80);
+    /*padding-bottom: rem(80);*/
     @include mq(md) {
-        margin-top: rem(132);
-        padding-bottom: rem(136);
-        overflow: hidden;
+        /*padding-bottom: rem(136);*/
     }
 }
 
 .about__inner {
+    margin-top: rem(80);
     @include mq(md) {
+    margin-top: rem(132);
     padding-left: 0;
     padding-right: 0;
     }
@@ -26,7 +25,7 @@
         position: relative;
         margin-top: rem(42);
         max-width: rem(1080);
-        /*width: 100vw;*/
+        /*width: 100vw;
         padding-top: rem(202);
         padding-bottom: rem(219);
         padding-left: rem(199);
@@ -34,7 +33,45 @@
         background-image: url('../images/common/about-pc.jpg');
         background-repeat: no-repeat;
         background-size: cover;
+        aspect-ratio: 1080 / 660;*/
+    }
+}
+
+.about__images {
+        aspect-ratio: 345 / 212;
+        overflow: hidden;
+        position: relative;
+    @include mq(md) {
         aspect-ratio: 1080 / 660;
+    }
+}
+
+.about__images-left {
+    aspect-ratio: 128 / 194;
+    width: 37.1%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    @include mq(md) {
+        aspect-ratio: 399 / 606;
+        width: 36.9%;
+    }
+}
+
+.about__images-right {
+    aspect-ratio: 281 / 186;
+    overflow: hidden;
+    position: absolute;
+    top: rem(26);
+    left: rem(64);
+    width: 81.4%;
+    @include mq(md) {
+        aspect-ratio: 880 / 581;
+        overflow: hidden;
+        position: absolute;
+        top: rem(80);
+        left: rem(199);
     }
 }
 
@@ -48,6 +85,7 @@
         top: 49%;
         left: 57%;
         transform: translate(-50%, -50%);
+        z-index: 3;
     }
 }
 
@@ -127,6 +165,6 @@
         width: 100%;
         position: absolute;
         bottom: -13%;
-        right: calc(50% - min(50vw, 635px));
+        right: calc(50% - min(47vw, rem(635)));
     }
 }

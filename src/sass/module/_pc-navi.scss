@@ -3,8 +3,7 @@
 .pc-navi__container {
     @include mq(md) {
     display: flex;
-    column-gap: rem(40);
-    justify-content: space-between;
+    column-gap: min(3vw , rem(40));
     color: $white;
     height: inherit;
     }

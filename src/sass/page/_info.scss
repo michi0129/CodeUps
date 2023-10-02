@@ -1,11 +1,15 @@
 @use "global" as *;
 
 .info {
+    background-color: $lightGreen;
+}
+
+.info__inner {
+    margin-top: rem(80);
     padding-top: rem(80);
     padding-bottom: rem(80);
-    background-color: $lightGreen;
-    
     @include mq(md) {
+        margin-top: rem(136);
         padding-top: rem(97);
         padding-bottom: rem(100);
     }
@@ -96,8 +100,8 @@
 .info__button {
     margin-top: rem(38.4);
     text-align: center;
-    padding-left: rem(69);
-    padding-right: rem(70);
+    /*padding-left: rem(69);
+    padding-right: rem(70);*/
 
     @include mq(md) {
         margin-top: rem(40);
