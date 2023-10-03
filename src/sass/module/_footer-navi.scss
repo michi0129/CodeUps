@@ -41,7 +41,6 @@
 
     @include mq(md) {
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        height: rem(228);
         gap: rem(60);
         width: 100%;
     }
