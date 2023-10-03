@@ -36,8 +36,8 @@
 }
 
 .campaign__contents .swiper {
-    /*padding-left: rem(24);
-    padding-right: rem(24);*/
+    padding-left: rem(5);
+    padding-bottom: rem(5);
 
     @include mq(md) {
         /*padding-left: rem(40);

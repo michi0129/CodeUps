@@ -2,8 +2,8 @@
 
 .contact {
     /*padding-top: rem(80);
-    padding-bottom: rem(58);*/
-    overflow: hidden;
+    padding-bottom: rem(58);
+    overflow: hidden;*/
 
     @include mq(md) {
         /*padding-top: rem(151);
@@ -174,7 +174,7 @@
 .contact__illust {
     position: absolute;
     top: rem(-26);
-    right: rem(-25);
+    right: calc(50% - min(45vw, rem(670)));
     width: rem(109);
     height: rem(50);
     @include mq(md) {

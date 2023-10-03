@@ -41,6 +41,7 @@
         aspect-ratio: 345 / 212;
         overflow: hidden;
         position: relative;
+        width: 100%;
     @include mq(md) {
         aspect-ratio: 1080 / 660;
     }
@@ -64,7 +65,7 @@
     overflow: hidden;
     position: absolute;
     top: rem(26);
-    left: rem(64);
+    right: 0;
     width: 81.4%;
     @include mq(md) {
         aspect-ratio: 880 / 581;
