@@ -8,10 +8,12 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
             $('.js-hamburger').removeClass('is-active');
             $(".sp-nav").removeClass('is-active');
             $("body").removeClass("is-active");
+            $(".header").removeClass("is-active");
         } else {
             $('.js-hamburger').addClass('is-active');
             $(".sp-nav").addClass('is-active');
             $("body").addClass("is-active");
+            $(".header").addClass("is-active");
         }
     });
 

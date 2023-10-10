@@ -13,12 +13,19 @@
 }
 
 .price__inner {
-    margin-top: rem(80);
+    /*padding-top: rem(80);
+    padding-bottom: rem(78.4);*/
+    @include mq(md) {
+        position: relative;
+        /*padding-top: rem(96);
+        padding-bottom: rem(100);*/
+    }
+}
+
+.price__wrapper {
     padding-top: rem(80);
     padding-bottom: rem(78.4);
     @include mq(md) {
-        position: relative;
-        margin-top: rem(138);
         padding-top: rem(96);
         padding-bottom: rem(100);
     }

@@ -7,13 +7,22 @@
 .footer__inner {
     max-width: rem(600);
     width: 100%;
-    margin: rem(58) auto 0;
+    /*margin: rem(58) auto 0;
     padding-top: rem(48);
-    padding-bottom: rem(56);
+    padding-bottom: rem(56);*/
     @include mq(md) {
         max-width: rem(1000);
         width: 100%;
-        margin-top: rem(149);
+        /*margin-top: rem(149);
+        padding-top: rem(80);
+        padding-bottom: rem(80);*/
+    }
+}
+
+.footer__wrapper {
+    padding-top: rem(48);
+    padding-bottom: rem(56);
+    @include mq(md) {
         padding-top: rem(80);
         padding-bottom: rem(80);
     }

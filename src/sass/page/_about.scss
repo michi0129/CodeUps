@@ -8,9 +8,9 @@
 }
 
 .about__inner {
-    margin-top: rem(80);
+    /*margin-top: rem(80);*/
     @include mq(md) {
-    margin-top: rem(132);
+    /*margin-top: rem(132);*/
     padding-left: 0;
     padding-right: 0;
     }
@@ -150,8 +150,8 @@
 .about__button {
     margin-top: rem(13);
     text-align: center;
-    padding-left: rem(69);
-    padding-right: rem(70);
+    /*padding-left: rem(69);
+    padding-right: rem(70);*/
 
     @include mq(md) {
         margin-top: rem(40);
