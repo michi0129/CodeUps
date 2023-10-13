@@ -2,6 +2,12 @@
 
 .footer {
     background-color: $green;
+    padding-top: rem(48);
+    padding-bottom: rem(56);
+    @include mq(md) {
+        padding-top: rem(80);
+        padding-bottom: rem(80);
+    }
 }
 
 .footer__inner {
@@ -16,15 +22,6 @@
         /*margin-top: rem(149);
         padding-top: rem(80);
         padding-bottom: rem(80);*/
-    }
-}
-
-.footer__wrapper {
-    padding-top: rem(48);
-    padding-bottom: rem(56);
-    @include mq(md) {
-        padding-top: rem(80);
-        padding-bottom: rem(80);
     }
 }
 

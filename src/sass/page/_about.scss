@@ -148,14 +148,10 @@
 }
 
 .about__button {
-    margin-top: rem(13);
+    margin-top: rem(40);
     text-align: center;
     /*padding-left: rem(69);
     padding-right: rem(70);*/
-
-    @include mq(md) {
-        margin-top: rem(40);
-    }
 }
 
 .about__coral {

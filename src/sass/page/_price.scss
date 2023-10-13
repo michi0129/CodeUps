@@ -4,8 +4,11 @@
     /*padding-top: rem(80);
     padding-bottom: rem(78.4);*/
     background-color: $lightGreen;
-
+    padding-top: rem(80);
+    padding-bottom: rem(78.4);
     @include mq(md) {
+        padding-top: rem(96);
+        padding-bottom: rem(100);
         /*padding-top: rem(96);
         padding-bottom: rem(100);
         overflow: hidden;*/
@@ -19,15 +22,6 @@
         position: relative;
         /*padding-top: rem(96);
         padding-bottom: rem(100);*/
-    }
-}
-
-.price__wrapper {
-    padding-top: rem(80);
-    padding-bottom: rem(78.4);
-    @include mq(md) {
-        padding-top: rem(96);
-        padding-bottom: rem(100);
     }
 }
 
@@ -225,7 +219,7 @@
         position: absolute;
         width: rem(437);
         height: rem(201);
-        bottom: rem(60);
+        bottom: rem(-48);
         left: calc(50% - min(48vw, rem(622)));
     }
 }

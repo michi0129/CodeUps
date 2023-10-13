@@ -2,6 +2,12 @@
 
 .info {
     background-color: $lightGreen;
+    padding-top: rem(80);
+    padding-bottom: rem(80);
+    @include mq(md) {
+        padding-top: rem(97);
+        padding-bottom: rem(100);
+    }
 }
 
 /*
@@ -16,15 +22,6 @@
     }
 }
 */
-
-.info__wrapper {
-    padding-top: rem(80);
-    padding-bottom: rem(80);
-    @include mq(md) {
-        padding-top: rem(97);
-        padding-bottom: rem(100);
-    }
-}
 
 .info__contents {
     max-width: rem(600);

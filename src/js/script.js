@@ -18,7 +18,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     });
 
     // Initialize Swiper
-    var swiper = new Swiper(".mySwiper", {
+    var swiper = new Swiper(".js-mv-swiper", {
         //pagination: {
         //    el: ".swiper-pagination",
         //},
@@ -33,7 +33,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     });
 
     // Swiper
-    var swiper = new Swiper(".mySwiperCampaign", {
+    var swiper = new Swiper(".js-campaign-swiper", {
         //pagination: {
         //    el: ".swiper-pagination",
         //},
@@ -117,7 +117,7 @@ box.each(function () {
 
 //Voiceの画像エフェクト
 //要素の取得とスピードの設定
-var box = $('.voice__image'),
+var box = $('.voice-card__image'),
     speed = 700;
 
 //.info__imageの付いた全ての要素に対して下記の処理を行う

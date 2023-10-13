@@ -4,6 +4,12 @@
     text-align: center;
 }
 
+.section-title--white {
+    @include mq(md) {
+    color: $white;
+    }
+}
+
 .section-title__english {
     font-family: $second-font-family;
     font-size: 2rem;
@@ -26,6 +32,7 @@
     }
 }
 
+/*
 .section-title__english--white {
     @include mq(md) {
         color: $white;
@@ -36,6 +43,7 @@
     text-transform: uppercase;
     color: $green;
 }
+*/
 
 .section-title__japanese {
     margin-top: 0.25rem;
@@ -53,8 +61,10 @@
     line-height: 1;
 }
 
+/*
 .section-title__japanese--white {
     @include mq(md) {
         color: $white;  
     }
 }
+*/
