@@ -92,6 +92,13 @@
 }
 */
 
+.campaign__card {
+    width: rem(280);
+    @include mq(md) {
+        width: rem(333);
+    }
+}
+
 /*
 .campaign__card {
     width: rem(280);
