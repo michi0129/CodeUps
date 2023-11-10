@@ -6,8 +6,6 @@
     background-color: $white;
 }
 
-
-
 .voice-card__inner {
     padding: rem(12.8) rem(16) rem(25.6) rem(16);
 
@@ -23,7 +21,6 @@
     align-items: end;
 
     @include mq(md) {
-        /*height: rem(140);*/
         column-gap: rem(16);
     }
 }
@@ -33,7 +30,6 @@
     width: 100%;
 
     @include mq(md) {
-        /*width: rem(276);*/
         margin-top: rem(24);
         max-width: rem(280);
         width: 100%;
@@ -46,7 +42,6 @@
     @include mq(md) {
         display: flex;
         justify-content: space-between;
-        /*align-items: baseline;*/
     }
 }
 
@@ -87,21 +82,12 @@
     }
 }
 
-/*.voice-card__bar {
-    display: block;
-    height: rem(1);
-    background-color: $green;
-    margin-top: rem(1.6);
-}*/
-
 .voice-card__image {
     aspect-ratio: 151 / 117;
     overflow: hidden;
     height: auto;
     max-width: rem(151);
     width: 100%;
-    /*width: rem(151);
-    height: rem(117);*/
     position: relative;
     margin-top: rem(10);
 
@@ -111,8 +97,6 @@
         height: auto;
         max-width: rem(180);
         width: 100%;
-        /*width: rem(180);*/
-        /*height: rem(140);*/
         margin-top: 0;
     }
 }
@@ -123,7 +107,7 @@
     right: 0;
     width: 100%;
     height: 100%;
-    z-index: 1000;
+    z-index: 999;
     background-color: $green;
 }
 

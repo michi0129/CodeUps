@@ -44,7 +44,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
             disableOnInteraction: false,
         },
         // 次のスライドを少し見せる
-        //slidesPerView: 1.2,
         slidesPerView: 'auto', // 自動調整
         // スライド間の余白
         spaceBetween: '6.4%',
@@ -53,35 +52,15 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         centeredSlides: false,
         // 前後の矢印
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            nextEl: ".campaign__swiper-button-next",
+            prevEl: ".campaign__swiper-button-prev",
         },
 
         //　ブレイクポイント     
         breakpoints: {
             768: {
-                //slidesPerView: 3.5,
-                //slidesPerView: 'auto', // 自動調整
                 // スライド間の余白
                 spaceBetween: '3.2%',
-                //centeredSlides: false,
-                //}
-                //paddingLeft: 140, // 最初のスライドにだけ適用する余白
-
-                // スライド切り替え時のコールバック
-                //on: {
-                //slideChangeTransitionStart: function () {
-                // スライドが切り替わる際のアニメーションで余白をなくす
-                //this.$el.find('.swiper-slide:first-child').css('padding-left', '0');
-                //},
-                ///slideChangeTransitionEnd: function () {
-                //アニメーション終了後に余白を再度設定
-                //if (this.activeIndex === 0) {
-                //this.$el.find('.swiper-slide:first-child').css('padding-left', '180px');
-                //}
-                //}
-                //},
-
             },
         },
     });
@@ -120,7 +99,7 @@ box.each(function () {
 var box = $('.voice-card__image'),
     speed = 700;
 
-//.info__imageの付いた全ての要素に対して下記の処理を行う
+//.voice__imageの付いた全ての要素に対して下記の処理を行う
 box.each(function () {
     $(this).append('<div class="color"></div>')
     var color = $(this).find($('.color')),
@@ -147,7 +126,7 @@ box.each(function () {
 var box = $('.price__image'),
     speed = 700;
 
-//.info__imageの付いた全ての要素に対して下記の処理を行う
+//.price__imageの付いた全ての要素に対して下記の処理を行う
 box.each(function () {
     $(this).append('<div class="color"></div>')
     var color = $(this).find($('.color')),

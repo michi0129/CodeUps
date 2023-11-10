@@ -1,27 +1,18 @@
 @use "global" as *;
 
 .price {
-    /*padding-top: rem(80);
-    padding-bottom: rem(78.4);*/
     background-color: $lightGreen;
     padding-top: rem(80);
     padding-bottom: rem(78.4);
     @include mq(md) {
         padding-top: rem(96);
         padding-bottom: rem(100);
-        /*padding-top: rem(96);
-        padding-bottom: rem(100);
-        overflow: hidden;*/
     }
 }
 
 .price__inner {
-    /*padding-top: rem(80);
-    padding-bottom: rem(78.4);*/
     @include mq(md) {
         position: relative;
-        /*padding-top: rem(96);
-        padding-bottom: rem(100);*/
     }
 }
 
@@ -58,7 +49,7 @@
     right: 0;
     width: 100%;
     height: 100%;
-    z-index: 1000;
+    z-index: 999;
     background-color: $green;
 }
 
@@ -103,58 +94,6 @@
         margin-top: rem(7);
     }
 }
-
-/* テーブル
-.price__table {
-    margin-top: rem(8);
-    width: 100%;
-    @include mq(md) {
-        margin-top: rem(8);
-    }
-}
-
-.price__table tr {
-    padding-bottom: rem(16);
-}
-
-.price__table tr:not(:first-child) {
-    margin-top: rem(8);
-}
-
-.price__table th {
-    width: rem(255);
-    text-align: left;
-    font-size: rem(14);
-    font-weight: $regular;
-    line-height: 1;
-    padding-bottom: rem(16);
-    padding-left: 0;
-
-    @include mq(md) {
-        font-size: rem(16);
-        line-height: 1;
-        padding-bottom: rem(14);
-        display: block;
-        width: min(rem(300) , 90%);
-        margin-right: 40px;
-    }
-}
-
-.price__table td {
-    width: rem(80);
-    text-align: right;
-    font-size: rem(14);
-    line-height: 1;
-    padding-bottom: rem(16);
-    padding-right: 0;
-
-    @include mq(md) {
-        font-size: rem(16);
-        line-height: 1;
-        padding-bottom: rem(14);
-    }
-}
-*/
 
 /* 説明リスト */
 .price__list {
@@ -203,8 +142,6 @@
 .price__button {
     text-align: center;
     margin-top: rem(40);
-    /*padding-left: rem(69);
-    padding-right: rem(70);*/
 
     @include mq(md) {
         margin-top: rem(78);

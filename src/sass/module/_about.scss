@@ -1,16 +1,7 @@
 @use "global" as *;
 
-.about {
-    /*padding-bottom: rem(80);*/
-    @include mq(md) {
-        /*padding-bottom: rem(136);*/
-    }
-}
-
 .about__inner {
-    /*margin-top: rem(80);*/
     @include mq(md) {
-    /*margin-top: rem(132);*/
     padding-left: 0;
     padding-right: 0;
     }
@@ -20,20 +11,10 @@
     max-width: rem(600);
     margin: rem(27) auto 0;
     width: 100%;
-    /*margin-top: rem(24);*/
     @include mq(md) {
         position: relative;
         margin-top: rem(42);
         max-width: rem(1080);
-        /*width: 100vw;
-        padding-top: rem(202);
-        padding-bottom: rem(219);
-        padding-left: rem(199);
-        padding-right: rem(40);
-        background-image: url('../images/common/about-pc.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        aspect-ratio: 1080 / 660;*/
     }
 }
 
@@ -96,7 +77,6 @@
     line-height: 1;
     color: $green;
     @include mq(md) {
-        /*width: 50%;*/
         font-size: rem(80);
         font-family: $second-font-family;
         line-height: 1.25;
@@ -150,8 +130,6 @@
 .about__button {
     margin-top: rem(40);
     text-align: center;
-    /*padding-left: rem(69);
-    padding-right: rem(70);*/
 }
 
 .about__coral {
