@@ -20,6 +20,10 @@
     }
 }
 
+.section-title__english--white {
+    color: $white;
+}
+
 .section-title__english::first-letter {
     text-transform: uppercase;
 }
@@ -27,6 +31,13 @@
 .section-title__english--large {
     font-size: rem(80);
     line-height: 1;
+    @include mq(md) {
+        font-size: rem(80);
+    }
+}
+
+.section-title__english--sub {
+    font-size: rem(40); 
     @include mq(md) {
         font-size: rem(80);
     }
@@ -68,3 +79,9 @@
     }
 }
 */
+
+/*Aboutページ*/
+.section-title__english--about::first-letter {
+    text-transform: uppercase;
+    color: $green;
+}

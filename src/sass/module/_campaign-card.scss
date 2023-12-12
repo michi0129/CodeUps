@@ -103,7 +103,6 @@
     justify-content: center;
     font-family: $Lato;
     align-items: baseline;
-
     @include mq(md) {
         column-gap: rem(24);
     }
@@ -139,3 +138,69 @@
         font-size: rem(40);
     }
 }
+
+/*Campaignページ*/
+
+/*
+.campaign-card__body-top {
+    @include mq(md) {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+}
+
+.campaign-card__body-bottom {
+    @include mq(md) {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+}
+*/
+
+.campaign-card__contents-description {
+    display: none;
+    @include mq(md) {
+        margin-top: rem(24);
+        display: block;
+        line-height: 1.5;
+        font-size: rem(16);
+        flex-grow: 1;
+    }
+}
+
+.campaign-card__contents-date {
+    display: none; 
+    @include mq(md) {
+        display: block;
+        font-size: rem(16);
+        color: $green;
+        text-align: center;
+        margin-top: rem(32);
+        font-family: $Lato;
+        line-height: 1;
+        }
+    }
+
+.campaign-card__caption {
+    display: none;
+    @include mq(md) {
+        display: block;
+        text-align: center;
+        margin-top: rem(7);
+        font-size: rem(14);
+        line-height: 1;
+        color: $green;
+    }
+}
+
+.campaign-card__button {
+    display: none;
+    @include mq(md) {
+        display: block;
+        text-align: center;
+        margin-top: rem(16);
+    }
+}
+
